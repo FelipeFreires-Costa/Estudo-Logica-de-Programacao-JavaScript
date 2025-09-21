@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Lista de Tarefas</title>
+  </head>
+  <body>
+  <main class="corpo">
+    <h1 class="titulo">Lista de tarefas</h1>
+    <form id="form-nota" class="form-nota">
+      <div class="container-titulo">
+        <input placeholder="Titulo" type="text" id="titulo-nota" class="titulo-form" required />
+      </div>
+
+      <div class="container-descricao">
+
+        <input
+          placeholder="Descrição"
+          type="text"
+          id="descricao-nota"
+          class="descricao-form"
+          required
+        />
+        
+      </div>
+      <button type="submit" id="adicionar-btn" class="adicionar-btn">
+        Adicionar
+      </button>
+    </form>
+
+    <div id="container-de-notas"></div>
+  </main>
+    
+
+    <script src="script.js"></script>
+  </body>
+</html>
