@@ -101,3 +101,5 @@ function encontrarValor(numeros) {
 const meuArray = [7, 2, 2, 3, 3]
 
 console.log(encontrarValor((meuArray)))
+
+

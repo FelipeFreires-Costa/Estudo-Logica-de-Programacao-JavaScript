@@ -23,7 +23,6 @@ function adicionarItem(){
   botaoRemover.textContent = 'remover'
 
 
-
   botaoRemover.addEventListener('click', () => {
     novoItem.remove()
   })

@@ -1,3 +1,4 @@
+
 /*
 Desafios do Dia 2
 1. Notas de um aluno
@@ -11,9 +12,9 @@ let nota = 6
 
 if (nota >= 7) {
   console.log("aprovado")
-} else if (nota >= 5 && nota < 7){
+} else if (nota >= 5 && nota < 7) {
   console.log("recuperaçao")
-}else{
+} else {
   console.log("reprovado")
 }
 
@@ -28,9 +29,9 @@ Caso contrário, mostre "Usuário ou senha incorretos".
 let usuario = "admin"
 let senha = "1234"
 
-if(usuario === "admin" && senha === "1234"){
+if (usuario === "admin" && senha === "1234") {
   console.log('Login bem-sucedido')
-}else{
+} else {
   console.log('usuario ou senha incorretos')
 }
 
@@ -44,10 +45,10 @@ Mostre o valor final no console.
 let valorCompra = 78
 
 
-if(valorCompra >= 100){
-let valorDesconto = valorCompra * 0.9
+if (valorCompra >= 100) {
+  let valorDesconto = valorCompra * 0.9
   console.log(`Compra aprovada, voce teve 10% de desconto, valor final: ${valorDesconto}`)
-}else{
+} else {
   console.log("faça uma compra acima de 99R$ para ter desconto")
 }
 
@@ -63,13 +64,13 @@ Se tiver 60 ou mais → "Idoso"
 
 let idade = 78
 
-if(idade < 12){
+if (idade < 12) {
   console.log('criança')
-}else if(idade >= 12 && idade <= 17){
+} else if (idade >= 12 && idade <= 17) {
   console.log("adolescente")
-}else if(idade >= 18 && idade <= 59){
+} else if (idade >= 18 && idade <= 59) {
   console.log("adulto")
-}else{
+} else {
   console.log("idoso")
 }
 
@@ -83,11 +84,11 @@ Caso contrário → "Saque realizado com sucesso"
 
 let saque = 2002
 
-if(saque < 20){
+if (saque < 20) {
   console.log("Valor minimo para saque é 20")
-}else if(saque > 2000){
+} else if (saque > 2000) {
   console.log('Valor maximo de saque é 2000')
-}else{
+} else {
   console.log("Saque realizado com sucesso")
 }
 
@@ -107,9 +108,9 @@ Mostre na tela: "Desconto aplicado" ou "Ingresso inteiro".
 
 let idadePessoa = 17
 
-if(idadePessoa <= 12 || idadePessoa >= 60){
+if (idadePessoa <= 12 || idadePessoa >= 60) {
   console.log("Desconto aplicado")
-}else{
+} else {
   console.log("ingresso inteiro")
 }
 
@@ -121,9 +122,9 @@ Receba um número e diga se ele é par ou ímpar.
 
 let num = 1489242
 
-if(num % 2 === 0){
+if (num % 2 === 0) {
   console.log("o numero é par")
-}else{
+} else {
   console.log("numero é impar")
 }
 
@@ -139,12 +140,20 @@ Abaixo de 5 → "Insuficiente"
 
 let nota2 = 2
 
-if(nota2 === 9 || nota2 === 10){
+if (nota2 === 9 || nota2 === 10) {
   console.log('Exelente')
-}else if(nota2 === 7 || nota2 === 8){
+} else if (nota2 === 7 || nota2 === 8) {
   console.log("bom")
-}else if(nota2 === 5 || nota2 === 6){
+} else if (nota2 === 5 || nota2 === 6) {
   console.log("razoavel")
-}else if(nota2 < 5){
+} else if (nota2 < 5) {
   console.log("insuficiente")
 }
+
+/* 
+Desafio Prático:
+Crie um array de objetos, onde cada objeto é um aluno com nome e nota.
+Crie uma função que percorra este array e exiba no console se o aluno foi "Aprovado" (nota >= 7) ou "Reprovado" (nota < 7).
+*/
+
+
