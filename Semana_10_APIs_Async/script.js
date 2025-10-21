@@ -18,13 +18,27 @@
 async function carregarUsuarioUnico(){
   console.log('iniciando a busca de usuario...')
 
-  const resposta = await fetch('https://jsonplaceholder.typicode.com/users/1')
+  const usuario = document.getElementById('usuario-info')
 
-  const dados = await resposta.json()
+  try{
+    const resposta = await fetch('https://jsonplaceholder.typicode.com/users/3')
 
-  console.log('usuario encontrado: ')
+    if(!resposta.ok){
+      throw new Error('Falha ao buscar dados: ' + resposta.statusText)
+    }
 
-  console.log(`nome: ${dados.name} email: ${dados.email}`)
+    const dados = await resposta.json()
+
+    usuario.innerHTML = `<h3>Nome: ${dados.name}</h3>
+    <p>Email: ${dados.email}</p>
+    <p>Cidade: ${dados.address.city}`
+
+    console.log('dados exibidos na pagina com sucesso!')
+  } catch (error){
+    console.error('erro na requisição: ', error)
+    usuario.textContent = 'Erro ao carregar dados'
+  }
+
 }
 
 carregarUsuarioUnico()
