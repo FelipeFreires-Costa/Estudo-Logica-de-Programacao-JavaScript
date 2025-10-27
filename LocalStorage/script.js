@@ -53,6 +53,7 @@ function removerTarefa(id) {
 function renderizarTarefas(id) {
   //peguei a listaTarefas e deixei vazio para evitar que tenha duplicatas
   listaTarefas.innerHTML = ''
+  
   //percorrer o array tarefas para criar os itens na tela
   tarefas.forEach(tarefa => {
     const itemLista = document.createElement('li')
